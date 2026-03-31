@@ -25,5 +25,5 @@ done < $target_log
 echo "Found $count occurrences of '$keyword'"
 
 echo "Last 5 matches:"
-tail -n 5 $target_log | grep $keyword
+grep "$keyword" "$target_log" | tail -n 5
 echo "================================================================================"
